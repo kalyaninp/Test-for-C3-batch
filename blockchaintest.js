@@ -89,3 +89,6 @@ module.exports = Blockchain;
   }
   return nonce;
 };
+
+AuthenticatorAssertionResponsec
+RTCPeerConnectionIceErrorEvent
