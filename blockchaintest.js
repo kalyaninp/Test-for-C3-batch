@@ -77,3 +77,15 @@ module.exports = Blockchain;
   }
   return nonce;
 };
+
+module.exports = Blockchain;
+{
+  let nonce = 0;
+  var hash = this.generateHash(nonce, currentBlockData, previousBlockHash);
+  while (hash.substring(0, 5) != "00000") {
+    hash = this.generateHash(nonce, currentBlockData, previousBlockHash);
+    console.log(hash);
+    nonce++;
+  }
+  return nonce;
+};
